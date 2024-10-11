@@ -45,7 +45,7 @@
 					starty: 5
 				},
 				{
-					clue: "The werewolves are howling, the banshees are screeching, the zombies are moaning, but and the generic monsters are doing this.",
+					clue: "The werewolves are howling, the banshees are screeching, the zombies are moaning, and the generic monsters are doing this.",
 					answer: "roaring",
 					position: 11,
 					orientation: "across",
