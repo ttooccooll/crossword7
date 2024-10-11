@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "baseball";
+    src: url("jersey.otf");
+}
+
+@font-face {
+    font-family: "football";
+    src: url("football.ttf");
+}
+
+@font-face {
+    font-family: "times";
+    src: url("Chomsky.otf");
+}
+
+@font-face {
+  font-family: "MyFontc";
+  src: url("alarm clock.ttf") format("truetype");
+}
+
+body {
+          display: flex;
+          flex-direction: column;
+          background: green url("./fturf.jpeg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+}
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+  }
+  
+  td input {
+    width: 100%;
+    padding: 0em;
+    border: none;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "football";
+    color: rgba(255, 255, 255, 0.373);
+    background-color: rgb(255 255 255 / 8%);
+  }
+  
+  td input:focus {
+    background-color: rgba(255, 255, 255, 0.373);
+    outline: none;
+  }
+  
+  td span {
+    font-family: monospace;
+    position: absolute;
+    top: -1px;
+    left: 1px;
+  }
+  
+  input.done {
+    font-weight: bold;
+    color: #b8ffac;
+  }
+  
+  ul[tabindex="1"] {
+    font-size: medium;
+    font-weight: light;
+    color: #ddd;
+    margin-bottom: 0.15rem;
+    margin-left: -100px;
+    font-size: 1.5em;
+    color: rgb(118, 118, 255);
+  }
+  
+  h2 {
+    color: black;
+    background-color: rgb(170, 121, 57);
+    border-radius: 5px;
+    box-shadow: inset 0px -10px 25px rgb(85, 57, 21), 3px 5px 5px rgb(87, 56, 15);
+    font-family: "football";
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 10px;
+    opacity: .8;
+    width: fit-content;
+  }
+  
+  .active,
+  ul.clues-active {
+    font-size: 1.7em;
+    color: #d7d7d7;
+  }
+  ul.clue-done {
+    color: rgb(46 153 209);
+    text-decoration: line-through;
+  }
+  
+  #puzzle-wrapper {
+    float: left;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #puzzle-clues {
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    font-family: "baseball";
+  }
+  
+  #puzzle-clues > * {
+    flex: 1;
+  }
+  
+  #across, #down {
+    margin-right: 50px;
+    padding: 2px 5px 2px 70px;
+    border: 5px blue solid;
+    box-shadow: inset 0px -3px 25px #757373, 3px 5px 5px #2f2f2f;
+    background: black;
+  }
+  
+  h3 {
+    color: #969696;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  
+  .sn {
+    font-size: large;
+    font-family: 'Droid Serif', Courier, monospace;;
+    background-color: #f9f7f1;
+    padding: 10px;
+    padding-top: 35px;
+    transform:
+        rotateX(2deg)
+        rotateZ(1deg);
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: inset 0px -10px 25px #757373, 3px 5px 5px #2f2f2f;
+  }
+  
+  .sn svg {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
+  
+  .onesat {
+    font-family: "MyFontc";
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 3px #b43434, 0 0 7px rgb(195, 41, 41), 0 0 12px #be1a1a,
+    0 0 22px #e40808;
+  font-size: 1.8em;
+  background: black;
+  padding: 2px;
+  width: 350px;
+  border: 5px double rgb(87, 56, 15);
+  border-radius: 4px;
+  box-shadow: 3px 5px 8px #2f2f2f;
+  white-space: nowrap;
+  }
+
+  .phone {
+    font-size: large;
+    font-family: 'Droid Serif', Courier, monospace;;
+    background-color: #f9f7f1;
+    padding: 10px;
+    transform:
+        rotateX(2deg)
+        rotateZ(1deg);
+    width: fit-content;
+    overflow: visible;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: inset 0px -10px 25px #757373, 3px 5px 5px #2f2f2f;
+  }
+  
+  footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: large;
+    font-family: 'Droid Serif', Courier, monospace;;
+    background-color: #f9f7f1;
+    padding: 10px;
+    transform:
+        rotateX(2deg)
+        rotateZ(1deg);
+    width: fit-content;
+    height: 15%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    bottom: 1%;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: inset 0px -10px 25px #757373, 3px 5px 5px #2f2f2f;
+    text-align: center;
+  }
+  
+  .links {
+    font-size: medium;
+    font-family: "times";
+  }
+  
+  .links a {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: medium;
+    margin: 10px;
+  }
+  
+  .ohio {
+    margin-top: 10px;
+  }
+  
+  a {
+    color: black;
+    font-family: "times";
+    text-decoration: none;
+  }
+
+      table td {
+          border: 1px solid rgb(255 255 255 / 18%);
+          background-color: rgb(18, 18, 20, .5);
+          position: relative;
+        }
+      .phone, .onesat {
+        margin-left: 10%;
+      }
+  
+  
+  button {
+    font-family: "times";
+    background: none;
+    color: black;
+    border: none;
+    width: 50px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .title {
+    width: fit-content;
+  color:#ddd;
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  .title a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f9f7f1;
+  }
+  
+  .lastweek {
+    white-space: nowrap;
+  }
+
+  .tog {
+  width: fit-content;
+  font-family: 'Courier New', Courier, monospace;
+}
