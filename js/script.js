@@ -125,7 +125,7 @@
 					starty: 1
 				},
 				{
-					clue: "This monster is associated with a particular biological system.",
+					clue: "This monster is associated with a particular human body system.",
 					answer: "skeleton",
 					position: 10,
 					orientation: "down",
