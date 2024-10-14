@@ -9,12 +9,12 @@
 	<script src="js/jquery.crossword.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="icon" href="icon_x128.png" />
-    <link rel="stylesheet" id="stylesheet" href="style.css">
+    <link rel="stylesheet" id="stylesheet" href="spooky.css">
 	<audio id="spooky-music" src="CarnivalTeeth.ogg" loop="loop"></audio>
 	<script>
 		function toggleStylesheet() {
 			const currentStylesheet = document.getElementById("stylesheet");
-			const newStylesheet = currentStylesheet.getAttribute("href") === "spooky.css" ? "style.css" : "spooky.css";
+			const newStylesheet = currentStylesheet.getAttribute("href") === "style.css" ? "spooky.css" : "style.css";
 			currentStylesheet.setAttribute("href", newStylesheet);
 			const spookyMusic = document.getElementById("spooky-music");
 			if (newStylesheet === "spooky.css") {
