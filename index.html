@@ -12,6 +12,17 @@
     <link rel="stylesheet" id="stylesheet" href="spooky.css">
 	<audio id="spooky-music" src="CarnivalTeeth.ogg" loop="loop"></audio>
 	<script>
+		let musicPlayed = false;
+		function playMusic() {
+		if (!musicPlayed) {
+			const spookyMusic = document.getElementById("spooky-music");
+			spookyMusic.play();
+			musicPlayed = true;
+		}
+		}
+		document.addEventListener('click', playMusic, { once: true });
+		document.addEventListener('keydown', playMusic, { once: true });
+		document.addEventListener('touchstart', playMusic, { once: true });
 		function toggleStylesheet() {
 			const currentStylesheet = document.getElementById("stylesheet");
 			const newStylesheet = currentStylesheet.getAttribute("href") === "style.css" ? "spooky.css" : "style.css";
